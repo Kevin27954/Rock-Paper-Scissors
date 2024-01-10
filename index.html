@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./script.js" defer></script>
+
+    <main>
+        <div class="gameInfo font-size">
+            <div class="score-container">Score:
+                <div class="score-wrapper">
+                    <div id="player-score">0</div>
+                    <div class="score">Player Score</div>
+                </div>
+                -
+                <div id="player-score" class="score-wrapper">
+                    <div id="computer-score">0</div>
+                    <div class="score">Computer Score</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container font-size">
+            <p>Result: <label id="result"></label></p>
+        </div>
+        <div class="container">
+            <button id="rock" class="player-button">Rock</button>
+            <button id="paper" class="player-button">Paper</button>
+            <button id="scissor" class="player-button">Scissor</button>
+        </div>
+    </main>
+
+    <div class="overlay not-active"></div>
+    <div class="modal font-size not-active">
+        <div id="game-end-message">You Won!</div>
+        <button id="play-again" class="player-button">
+            Play Again?
+        </button>
+    </div>
+</body>
+
+</html>
